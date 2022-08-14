@@ -1,6 +1,6 @@
 #ifndef DEMO_CPP_SIMPLECLASS_H
 #define DEMO_CPP_SIMPLECLASS_H
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class SimpleClass {

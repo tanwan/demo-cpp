@@ -4,5 +4,7 @@
         {
             "pattern": "build/**/*-test"
         }
-    ]
+    ],
+    // 使用clangd,需要关闭intelliSenseEngine
+    "C_Cpp.intelliSenseEngine": "Disabled"
 }

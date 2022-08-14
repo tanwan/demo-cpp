@@ -17,3 +17,6 @@
 ### VS Code
 代码如果有进行修改, 在运行之前,需要进行build(点击底部状态栏的build即可进行build)
 直接运行没有cout没有输出, 这边都使用debug来执行
+
+## LSP(Language Server Protocol)
+使用clangd
