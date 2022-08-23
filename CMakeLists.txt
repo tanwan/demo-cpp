@@ -14,3 +14,6 @@ FetchContent_MakeAvailable(googletest)
 # 添加子项目
 add_subdirectory(base)
 
+# 复制files
+file(GLOB baseNeedCopyFiles "${CMAKE_CURRENT_SOURCE_DIR}/files/*")
+file(COPY ${baseNeedCopyFiles} DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/files)

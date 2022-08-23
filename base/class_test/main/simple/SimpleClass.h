@@ -7,8 +7,13 @@ using namespace std;
 class SimpleClass : public SuperClass {
 public:
   SimpleClass(int intField, const string &stringField);
-  // 如果函数定义和实现是分开的,那边纯虚函数也需要定义在派生类的定义中
-  int virtualMethod();
+  SimpleClass(const SimpleClass &obj);
+  ~SimpleClass();
+
+  // 重载运算符
+  SimpleClass operator+(const SimpleClass &other);
+  // 重载<<,需要定义为友元函数(可以访问私有变量)
+  friend ostream &operator<<(ostream &os,  SimpleClass &simpleClass);
 
   int getIntField() const;
 
@@ -18,6 +23,9 @@ public:
 
   void setStringField(const string &stringField);
 
+  string nonVirtualMethod();
+
+  string virtualMethod();
 private:
   int intField;
   string stringField;
