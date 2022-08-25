@@ -13,6 +13,7 @@ FetchContent_MakeAvailable(googletest)
 
 # 添加子项目
 add_subdirectory(base)
+add_subdirectory(stl)
 
 # 复制files
 file(GLOB baseNeedCopyFiles "${CMAKE_CURRENT_SOURCE_DIR}/files/*")
